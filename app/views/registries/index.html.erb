@@ -1,0 +1,31 @@
+<h1>Listing registries</h1>
+
+<table>
+  <tr>
+    <th>Yes</th>
+    <th>No</th>
+    <th>Quantity</th>
+    <th>Color</th>
+    <th>Brand</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @registries.each do |registry| %>
+  <tr>
+    <td><%= registry.yes %></td>
+    <td><%= registry.no %></td>
+    <td><%= registry.quantity %></td>
+    <td><%= registry.color %></td>
+    <td><%= registry.brand %></td>
+    <td><%= link_to 'Show', registry %></td>
+    <td><%= link_to 'Edit', edit_registry_path(registry) %></td>
+    <td><%= link_to 'Destroy', registry, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Registry', new_registry_path %>

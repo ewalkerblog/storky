@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Yes:</b>
+  <%= @registry.yes %>
+</p>
+
+<p>
+  <b>No:</b>
+  <%= @registry.no %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @registry.quantity %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @registry.color %>
+</p>
+
+<p>
+  <b>Brand:</b>
+  <%= @registry.brand %>
+</p>
+
+
+<%= link_to 'Edit', edit_registry_path(@registry) %> |
+<%= link_to 'Back', registries_path %>

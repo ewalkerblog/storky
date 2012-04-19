@@ -1,4 +1,6 @@
 Storky::Application.routes.draw do
+  resources :registries
+  root :to => 'registries#index'
   devise_for :users
 
   # The priority is based upon order of creation:

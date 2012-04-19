@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  yes: MyString
+  no: MyString
+  quantity: 1
+  color: MyString
+  brand: MyString
+
+two:
+  yes: MyString
+  no: MyString
+  quantity: 1
+  color: MyString
+  brand: MyString
