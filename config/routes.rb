@@ -1,6 +1,9 @@
 Storky::Application.routes.draw do
+  match '/home',    to: 'static_pages#home'
+  match '/about',   to: 'static_pages#about'
+
   resources :registries
-  root :to => 'registries#index'
+  root :to => 'static_pages#home'
   devise_for :users
 
   # The priority is based upon order of creation:
